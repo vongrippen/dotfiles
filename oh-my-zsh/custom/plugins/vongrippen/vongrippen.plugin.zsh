@@ -1,6 +1,12 @@
-c() { cd ~/code/$1; }
-_c() { _files -W ~/code -/; }
-compdef _c c
+unalias d
+d() { cd ~/Development/$1; }
+_d() { _files -W ~/Development -/; }
+compdef _d d
+
+unalias g
+g() { cd ~/.gvm/pkgsets/$gvm_go_name/$gvm_pkgset_name/$1; }
+_g() { _files -W ~/.gvm/pkgsets/$gvm_go_name/$gvm_pkgset_name -/; }
+compdef _g g
 
 h() { cd ~/$1; }
 _h() { _files -W ~/ -/; }
