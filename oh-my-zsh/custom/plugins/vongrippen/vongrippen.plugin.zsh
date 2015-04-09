@@ -20,5 +20,11 @@ alias gs='git status'
 alias gd='git diff'
 alias tlog='tail -f log/development.log'
 
+# my heroku aliases
+alias hl='heroku logs'
+alias hr='heroku run'
+alias hc='heroku run rails console'
+alias hb='heroku run bash'
+
 # add plugin's bin directory to path
 export PATH="$(dirname $0)/bin:$PATH"
