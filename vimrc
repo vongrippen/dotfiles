@@ -192,7 +192,8 @@ endif
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.DS_Store','\.git','\.svn','\.sass-cache$']
-au VimEnter *  NERDTree
+autocmd StdinReadPre * let s:std_in=1
+au VimEnter *  if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Plugin: matchit
 " runtime! macros/matchit.vim
@@ -214,3 +215,9 @@ if has("autocmd")
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+" NeoComplete
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
