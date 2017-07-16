@@ -63,12 +63,13 @@ alias rails=`noglob rails`
 # my git aliases
 alias ga='git add'
 alias gp='git push'
-alias gb='git checkout branch -b'
+alias gb='git checkout -b'
 alias gc='git checkout'
 
 # my yarn aliases
 alias ya='yarn add'
 alias yga='yarn global add'
+alias ys='yarn start'
 
 # add plugin's bin directory to path
 export PATH="$(dirname $0)/bin:$PATH"
