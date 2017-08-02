@@ -91,3 +91,6 @@ Add/Remove tags on struct fields with :GoAddTags
 Add import paths via :GoImport or remove them with :GoDrop
 * Custom vim text objects such as a function (af) or inner function (if)
 * ... and many more! Please see doc/vim-go.txt for more information.
+
+## vim-go resource
+Learning resource located at https://github.com/fatih/vim-go-tutorial
