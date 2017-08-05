@@ -69,3 +69,28 @@ chsh -s /bin/bash # change back to Bash if you want
 ```
 
 Then open a new terminal window to see the effects.
+
+## vim-go
+Using vim-go plugin(https://github.com/fatih/vim-go).
+
+The following are features that vim-go adds to your rc, taken from the vim-go docs:
+
+* Build with :GoBuild, install with :GoInstall or test with  :GoTest (run single tests via :GoTestFunc)
+* Show test coverage with :GoCoverage or in browser with :GoCoverageBrowser
+* Goto definition with :GoDef
+* Quick jump to declarations with :GoDecls or :GoDeclsDir
+* Show documentation with :GoDoc inside or in browser with :GoDocBrowser
+* Quickly execute your current file/files with :GoRun
+* Advanced source analysis tools utilizing guru, such as :GoImplements, :GoCallees, and :GoReferrers
+* Change or display GOPATH with :GoPath
+* Multiple 3rd linter support with :GoMetaLinter
+* Renaming identifiers with :GoRename
+* Share your code to play.golang.org with :GoPlay
+* Switch between *.go and *_test.go code with :GoAlternate
+Add/Remove tags on struct fields with :GoAddTags
+Add import paths via :GoImport or remove them with :GoDrop
+* Custom vim text objects such as a function (af) or inner function (if)
+* ... and many more! Please see doc/vim-go.txt for more information.
+
+## vim-go resource
+Learning resource located at https://github.com/fatih/vim-go-tutorial
